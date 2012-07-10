@@ -19,7 +19,7 @@ export ZSH_THEME="sankara-dark"
 
 SSSHA_KEYS=("$HOME/.ssh/id_work")
 export SSSHA_KEYS
-plugins=(git lein zsh-syntax-highlighting my-ssh-agent)
+plugins=(git lein brew zsh-syntax-highlighting my-ssh-agent)
 
 source $ZSH/oh-my-zsh.sh
 
