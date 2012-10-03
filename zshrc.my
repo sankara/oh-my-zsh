@@ -19,8 +19,10 @@ export ZSH_THEME="sankara-dark"
 
 SSSHA_KEYS=("$HOME/.ssh/id_work")
 export SSSHA_KEYS
-plugins=(git lein brew zsh-syntax-highlighting my-ssh-agent)
+plugins=(git lein brew zsh-syntax-highlighting my-ssh-agent rails ruby)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
