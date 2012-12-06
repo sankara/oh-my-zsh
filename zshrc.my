@@ -19,7 +19,7 @@ export ZSH_THEME="sankara-dark"
 
 SSSHA_KEYS=("$HOME/.ssh/id_work")
 export SSSHA_KEYS
-plugins=(git lein brew zsh-syntax-highlighting my-ssh-agent rails3 ruby rvm)
+plugins=(git lein brew zsh-syntax-highlighting my-ssh-agent rails3 ruby rvm autojump)
 
 source $ZSH/oh-my-zsh.sh
 
