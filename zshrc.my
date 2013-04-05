@@ -17,9 +17,10 @@ export ZSH_THEME="sankara-dark"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
-SSSHA_KEYS=("$HOME/.ssh/id_work")
-export SSSHA_KEYS
-plugins=(git lein brew zsh-syntax-highlighting my-ssh-agent rails3 ruby rvm autojump)
+#SSSHA_KEYS=("$HOME/.ssh/id_work")
+#export SSSHA_KEYS
+#my-ssh-agent
+plugins=(git lein brew zsh-syntax-highlighting rails3 ruby rvm autojump)
 
 source $ZSH/oh-my-zsh.sh
 
