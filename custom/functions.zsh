@@ -4,7 +4,7 @@
 ##of grep that doesn't understand --color
 alias grep='nocorrect grep --color=auto'
 
-alias ls='ls --color=auto'
+alias ls='ls'
 alias ll='ls -lh'
 alias vi='vim'
 
