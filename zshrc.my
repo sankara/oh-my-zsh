@@ -31,3 +31,5 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+
+function deploy {ey deploy -e=$1 --no-migrate > /tmp/deploy.log 2>&1 | tee; ~/bin/notify 'Deployment-Complete' $(if (($? == 0)); then; echo 'Status:success'; else; echo 'Status:failure'; fi) }
