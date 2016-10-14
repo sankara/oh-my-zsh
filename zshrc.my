@@ -29,9 +29,13 @@ source $ZSH/oh-my-zsh.sh
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$HOME/bin:$PATH"
 
-function deploy {ey deploy -e=$1 --no-migrate > /tmp/deploy.log 2>&1 | tee; ~/bin/notify 'Deployment-Complete' $(if (($? == 0)); then; echo 'Status:success'; else; echo 'Status:failure'; fi) }
-function find-my-router {arp -a | grep 50:46:5d:91:f9:94 | cut -f 2 -d' ' | sed 's/(\([0-9.]*\))/\1/'}
+function deploy {
+  ey deploy -e=$1 --no-migrate > /tmp/deploy.log 2>&1 | tee ~/bin/notify 'Deployment-Complete' $(if (($? == 0)); then; echo 'Status:success'; else; echo 'Status:failure'; fi)
+}
+function find-my-router {
+  arp -a | grep 50:46:5d:91:f9:94 | cut -f 2 -d' ' | sed 's/(\([0-9.]*\))/\1/'
+}
 
 source /Users/sankara/.iterm2_shell_integration.zsh
