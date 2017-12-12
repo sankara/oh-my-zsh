@@ -20,7 +20,8 @@ export ZSH_THEME="agnoster"
 #SSSHA_KEYS=("$HOME/.ssh/id_work")
 #export SSSHA_KEYS
 #my-ssh-agent
-plugins=(git lein brew zsh-syntax-highlighting rails ruby rvm autojump)
+plugins=(git lein brew zsh-syntax-highlighting rails ruby rvm autojump ssh-agent)
+zstyle :omz:plugins:ssh-agent identities id_work
 
 source $ZSH/oh-my-zsh.sh
 
