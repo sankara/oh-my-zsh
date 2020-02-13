@@ -36,3 +36,6 @@ export ITERM_ENABLE_SHELL_INTEGRATION_WITH_TMUX=YES
 source ~/.iterm2_shell_integration.zsh
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 source $ZSH/personal/my-aliases.sh
+if [ -z "$TMUX" ] && [ -n "$SSH_TTY" ] && [[ $- =~ i ]]; then
+    tmux -CC new -A -s sankara
+fi
