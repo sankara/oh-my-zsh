@@ -32,6 +32,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/bin:/usr/local/sbin:$HOME/bin:$PATH"
 
+export ITERM_ENABLE_SHELL_INTEGRATION_WITH_TMUX=YES
 source ~/.iterm2_shell_integration.zsh
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 source $ZSH/personal/my-aliases.sh
