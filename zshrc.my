@@ -36,3 +36,4 @@ if [ -z "$TMUX" ] && [ -n "$SSH_TTY" ] && [[ $- =~ i ]]; then
     tmux -CC new -A -s sankara
 fi
 
+alias python=python3
