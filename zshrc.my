@@ -17,7 +17,7 @@ export ZSH_THEME="spaceship"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
 plugins=(git lein brew autojump ssh-agent zsh-autosuggestions zsh-syntax-highlighting)
-zstyle :omz:plugins:ssh-agent identities id_work
+# zstyle :omz:plugins:ssh-agent identities id_work
 
 source $ZSH/oh-my-zsh.sh
 
@@ -37,3 +37,22 @@ if [ -z "$TMUX" ] && [ -n "$SSH_TTY" ] && [[ $- =~ i ]]; then
 fi
 
 alias python=python3
+source $HOME/.cargo/env
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/sankara/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/sankara/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/sankara/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/sankara/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+export GPG_TTY=/dev/ttys000
+
