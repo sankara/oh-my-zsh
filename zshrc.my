@@ -16,9 +16,9 @@ export ZSH_THEME="spaceship"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
-plugins=(git lein brew autojump ssh-agent zsh-autosuggestions zsh-syntax-highlighting)
 # zstyle :omz:plugins:ssh-agent identities id_work
 
+plugins=(git lein brew autojump ssh-agent zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
@@ -37,7 +37,6 @@ if [ -z "$TMUX" ] && [ -n "$SSH_TTY" ] && [[ $- =~ i ]]; then
 fi
 
 alias python=python3
-source $HOME/.cargo/env
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -56,3 +55,4 @@ source $HOME/.cargo/env
 
 export GPG_TTY=/dev/ttys000
 
+export SSH_AUTH_SOCK=~/.1password/agent.sock
