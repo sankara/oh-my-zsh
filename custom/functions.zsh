@@ -13,12 +13,6 @@ alias vi='vim'
 # Functions
 #
 
-alias pullall='for i in *; do; (cd $i; git pull;) done;'
-alias idea='/opt/idea/bin/idea.sh'
-alias sld='sudo -u ldapp'
-alias slc='sudo -u ldcpapp'
-alias mcs='mysql -ucloud -pscape'
-
 
 # lcfiles - Lowercase all files in the current directory
 lcfiles() {
